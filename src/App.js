@@ -1,15 +1,16 @@
 
-import Button from "./Button";
-import PropTypes from "prop-types";
+import { useState } from "react";
+
 function App() {
+  const [number, setNumber] = useState(0);
+  const click=()=>{
+    setNumber(number+1);
+  }
   return (
     <div>
-      helloㄴ
-      <Button text={'1'}></Button>
+      {number}
+      <button onClick={click}>ff</button>
     </div>
   );
-}
-Button.prototype={
-  text:PropTypes.string.isRequired
 }
 export default App;
