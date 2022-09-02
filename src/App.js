@@ -13,12 +13,13 @@ function App() {
     setNumber(number+1);
   }
   const search=(event)=>{
-    console.log('search');
     setKeyword(event.target.value);
   }
   useEffect(api,[]);
   useEffect(()=>{
-    console.log('search'+keyword);
+    if(keyword.length>5){
+      console.log('search'+keyword);
+    }
   },[keyword]);
   return (
     <div>

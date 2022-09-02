@@ -1,3 +1,4 @@
+https://nomadcoders.co/react-for-beginners/lobby  
 useState-------------  
 초기값 지정가능  
 랜더링 일으켜준다  
