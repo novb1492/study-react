@@ -1,8 +1,9 @@
-
+import {  useParams } from 'react-router-dom';
 function Detail() {
+    let{id,secondId}=useParams();
     return(
         <div>
-            Detail
+            Detail{id}{secondId}
         </div>
     )
 }
