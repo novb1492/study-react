@@ -1,15 +1,21 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Hello() {
+  let [text,setText]=useState(null);
+  useEffect(()=>{
+    console.log('created');
+    setText('hello');
+    return ()=>console.log("de");
+  },[]);
   return (
     <div>
-        <h1>ghhhh</h1>
+        <h1>{text}</h1>
     </div>
   );
 }
 function App() {
-  let [flag, setFlag] = useState(true);
+  let [flag, setFlag] = useState(false);
   function change() {
     setFlag(!flag);
   }
