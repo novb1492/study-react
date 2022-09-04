@@ -2,12 +2,15 @@
 import { useEffect, useState } from "react";
 
 function Hello() {
-  let [text,setText]=useState(null);
-  useEffect(()=>{
+  let [text]=useState(null);
+  function start() {
     console.log('created');
-    setText('hello');
-    return ()=>console.log("de");
-  },[]);
+    return bye;
+  }
+  function bye() {
+    console.log('bye');
+  }
+  useEffect(start,[]);
   return (
     <div>
         <h1>{text}</h1>
