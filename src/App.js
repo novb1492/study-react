@@ -16,7 +16,7 @@ function App() {
     <div>
       {loading ?<span>loading...</span>:null}
       <ul>
-        {coins.map((coin)=> <li>{coin.name}</li>)}
+        {coins.map((coin)=> <li id={coin.id} key={coin.id}>{coin.name}</li>)}
       </ul>
     </div>
   );
