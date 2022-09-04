@@ -9,7 +9,7 @@ function Home() {
     return (
         <div>
             <ul>
-                {movies.map((movie) => <Movie title={movie.title} key={movie.key} />)}
+                {movies.map((movie) => <Movie title={movie.title} key={movie.key} id={movie.key} />)}
             </ul>
         </div>
     );
